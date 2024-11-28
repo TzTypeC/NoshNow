@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="../../assets/css/tailwind.css">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,37 +11,11 @@
   <body class="font-poppins">
 
     <!-- Navbar -->
-    <nav class="bg-white border-slate-200 border-b w-full h-16 flex justify-between fixed items-center px-12 z-10">
-      <!-- Left Buttons Wrapper -->
-      <div class="flex items-center gap-10">
-        <!-- NoshNow Title-->
-        <div class="flex items-center gap-3">
-          <i class='text-4xl text-center bx bxs-bowl-rice text-primary-500'></i>
-          <h1 class="font-semibold text-[2.5rem] text-primary-500">NoshNow</h1>
-        </div>
-
-        <!-- Buttons -->
-        <ul class="flex items-center h-full font-medium *:*:px-4  *:cursor-pointer *:*:py-4 *:align-middle ">
-          <li>
-            <a class="border-b-4 border-primary-500 text-primary-500" href="index.php">Home</a>
-          </li>
-          <li>
-            <a class="text-gray-500 hover:text-black">Order</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Right Buttons Wrapper -->
-      <div>
-        <button class="bg-primary-100 px-4 py-2 rounded-full font-medium text-primary-600">Sign Up</button>
-      </div>
-
-    </nav>
+    <?php include '../layout/header.php';?>
 
     <!-- Pengganjal :p -->
-    <div class="bg-white w-full h-16"></div>
-
-    <div class="w-5/6 h-max flex flex-col gap-6 mx-auto">
+    <div class="bg-white w-full h-16"></div> 
+    <div class="w-5/6 h-max flex flex-col gap-6 mx-auto mt-8">
         <h1 class="text-4xl border-b pb-3 border-gray-200">Kantin 1</h1>
         <div class="flex gap-6">
           <div class="w-96 h-[36rem] bg-green-500 rounded-2xl"></div>
