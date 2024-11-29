@@ -43,11 +43,8 @@
     </div>
     </div>
 
-    <!-- Penjanggal bjir -->
-    <div class="bg-white h-24"></div>
-  
     <!-- Contents -->
-    <div class="flex flex-col gap-8">  
+    <div class="flex flex-col gap-8 mt-24">  
       <span class="text-center text-2xl font-medium">Kamu mw bli apa bub</span>
       <div class="flex justify-center gap-6 font-medium text-lg items-center *:border *:border-gray-200 *:size-48 *:rounded-2xl hover:*:shadow-xl *:transition-shadow *:duration-200">
         <button>Makanan</button>
@@ -58,8 +55,8 @@
         
       </div>
    
-      <span class="text-center text-2xl font-medium">Jelajahi menu <span class="underline font-semibold">SMA Negeri 3 Jombang</span></span>
-      <div class="w-3/4 h-max grid grid-cols-4 gap-6 mx-auto *:text-center *:py-5 *:px-6 *:rounded-2xl *:h-[30rem] hover:*:shadow-xl *:transition-shadow *:duration-200">
+      <span class="text-center text-2xl font-medium mt-24">Jelajahi menu <span class="underline font-semibold">SMA Negeri 3 Jombang</span></span>
+      <div class="w-[75vw] h-max grid grid-cols-4 gap-6 mx-auto *:text-center *:py-5 *:px-6 *:rounded-2xl *:h-[30rem] hover:*:shadow-xl *:transition-shadow *:duration-200">
             <!-- Grid Content Wrapper -->
             <div class="flex flex-col h-full gap-3">
               <!-- Product Image -->

@@ -12,7 +12,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="bg-white border-slate-200 border-b w-full h-16 flex justify-between fixed items-center px-12 z-10">
+        <nav class="bg-white border-slate-200 border-b w-full h-16 flex justify-between fixed items-center px-6 z-10">
             <!-- Left Buttons Wrapper -->
             <div class="flex items-center gap-10">
                 <!-- NoshNow Title-->
@@ -41,8 +41,10 @@
             </div>
     
             <!-- Right Buttons Wrapper -->
-            <div>
+            <div class="flex items-center gap-3">
+                <button class='bg-primary-100 text-primary-600 px-2 py-2 rounded-full bx bx-basket text-2xl'></button>
                 <button class="bg-primary-100 px-4 py-2 rounded-full font-medium text-primary-600">Sign Up</button>
+                <span>Welcome, <button class="underline font-medium" >TbrzTbrd</button></span>
             </div>
         </nav>
         <!-- Navbar END -->
