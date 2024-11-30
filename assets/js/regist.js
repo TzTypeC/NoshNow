@@ -77,7 +77,7 @@ function validateEmail() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(emailValue)) {
-        showAlert("Email Error", "Masukkan email yang valid (contoh: user@example.com).");
+        showAlert("Email Error", "Masukkan email yang valid (contoh: user@example.com)");
         errorCheck = false;
     } else {
         hideAlert();

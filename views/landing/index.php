@@ -1,3 +1,11 @@
+<?php 
+session_start();
+
+require '../../config/checkcookie.php';
+check_cookie();
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>

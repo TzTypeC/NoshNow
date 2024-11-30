@@ -4,9 +4,16 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 require '../../controllers/regist.php';
+require '../../config/checkcookie.php';
+
+check_cookie();
+
+if(isset($_SESSION['logged'])){
+    header('Location: ../landing/');
+}
 
 if (isset($_POST["submit"])) {
-    $regist = regist_user($_POST); // Perbaiki $POST menjadi $_POST
+    $regist = regist_user($_POST);
     if ($regist == 'success') {
         header('Location: signin.php');
     } else if($regist == 'username_already_used') {
