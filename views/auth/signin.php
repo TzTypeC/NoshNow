@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="dUTF-8" />
-    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="../../assets/css/tailwind.css" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
@@ -10,7 +10,7 @@
   <body>
     <section class="bg-gray-50 font-poppins">
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto h-screen lg:py-0">
-          <a href="#" class="flex items-center mb-6 text-5xl font-semibold text-gray-900">
+          <a href="../landing/index.php" class="flex items-center mb-6 text-5xl font-semibold text-gray-900">
               NoshNow    
           </a>
           <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
@@ -30,7 +30,7 @@
                       
                       <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Sign In</button>
                       <p class="text-sm font-light text-gray-500 ">
-                          Don't have an account? <a href="signup.html" class="font-medium text-primary-600 hover:underline ">Sign Up</a>
+                          Don't have an account? <a href="signup.php" class="font-medium text-primary-600 hover:underline ">Sign Up</a>
                       </p>
                   </form>
               </div>
