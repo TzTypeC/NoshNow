@@ -9,13 +9,19 @@ require '../../config/checkcookie.php';
 check_cookie();
 
 if(isset($_SESSION['logged'])){
-    header('Location: ../landing/');
+    if($_SESSION['role']=='seller'){
+        header("Location: ../seller/index.php?seller=" . $_SESSION['username']);
+    }else{
+        header('Location: ../landing/');
+    }
 }
 
 if(isset($_POST["submit"])){
     $login  = login_user($_POST);
     if($login == 'customer'){
         header('Location: ../landing/');
+    }else if($login == 'seller'){
+        header("Location: ../seller/index.php?seller=" . $_SESSION['username']);
     }else if($login == 'error'){
         $errorMessage['status'] = true;
         $errorMessage['title'] = 'Email / Username Wrong';

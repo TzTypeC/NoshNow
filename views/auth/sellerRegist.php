@@ -17,9 +17,13 @@ if(isset($_SESSION['logged'])){
 }
 
 if (isset($_POST["submit"])) {
-    $regist = regist_user($_POST);
+    $regist = seller_regist($_POST);
     if ($regist == 'success') {
         header('Location: signin.php');
+    } else if($regist == 'invalid_key') {
+        $errorMessage['status'] = true;
+        $errorMessage['title'] = 'Key Invalid';
+        $errorMessage['desc'] = 'Key Invalid or Expired';
     } else if($regist == 'username_already_used') {
         $errorMessage['status'] = true;
         $errorMessage['title'] = 'Username Already Used';
@@ -70,16 +74,28 @@ if (isset($_POST["submit"])) {
         <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <h1 class="text-xl font-semibold leading-tight tracking-tight text-gray-900 md:text-2xl">
-                    Create an account
+                    Create an seller account
                 </h1>
                 <form class="space-y-4 md:space-y-6" action="" method="POST">
-                    <div>
-                        <label for="username" class="block mb-2 text-sm font-medium text-gray-900">Username</label>
-                        <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Username" required="">
+                    <div class="flex flex-row">
+                        <div class="mr-4">
+                            <label for="username" class="block mb-2 text-sm font-medium text-gray-900">Username</label>
+                            <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Username" required="">
+                        </div class="ml-4">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="name@company.com" required="">
+                        </div>
                     </div>
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="name@company.com" required="">
+                    <div class="flex flex-row">
+                        <div class="mr-4">
+                            <label for="keys" class="block mb-2 text-sm font-medium text-gray-900">Key</label>
+                            <input type="text" name="keys" id="keys" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Key from Administator" required="">
+                        </div class="ml-4">
+                        <div>
+                            <label for="canteenName" class="block mb-2 text-sm font-medium text-gray-900">Canteen Name</label>
+                            <input type="text" name="canteenName" id="canteenName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="Your Canteen" required="">
+                        </div>
                     </div>
                     <div>
                         <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
@@ -103,6 +119,6 @@ if (isset($_POST["submit"])) {
 
     <!-- React stuff idfk -->
     <div id="root"></div>
-    <script type="module" src="../../assets/js/regist.js"></script>
+    <script type="module" src="../../assets/js/sellerRegist.js"></script>
   </body>
 </html>

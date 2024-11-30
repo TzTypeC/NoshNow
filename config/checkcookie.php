@@ -20,6 +20,7 @@ function check_cookie(){
             $_SESSION["logged"] = true;
             $_SESSION["username"] = $row["username"];
             $_SESSION["id"] = $row["user_id"];
+            $_SESSION["role"] = $row["role"];
         }
       }
 }
