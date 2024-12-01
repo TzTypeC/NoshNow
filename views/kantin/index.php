@@ -22,7 +22,7 @@
           <div class="w-full h-48 md:w-96 md:h-[40rem] bg-green-500 rounded-2xl"></div>
           
           <!-- Store Products/Grid -->
-          <div class="w-full h-max grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mx-auto *:text-center *:py-5 *:px-6 *:rounded-2xl *:h-[30rem] hover:*:shadow-xl *:transition-shadow *:duration-200">
+          <div class="w-full h-max grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 mx-auto *:text-center *:py-5 *:px-6 *:rounded-2xl *:h-[30rem] hover:*:shadow-xl *:transition-shadow *:duration-200">
             
             <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
             <div class="flex flex-col h-full gap-3">
