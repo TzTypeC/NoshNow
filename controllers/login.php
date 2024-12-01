@@ -34,8 +34,9 @@ function login_user($data) {
 
             return $row['role']; // Pengguna berhasil login
         }
+        return 'error'; // Jika tidak ada pengguna yang cocok atau password salah
     }
-
     return 'error'; // Jika tidak ada pengguna yang cocok atau password salah
+    
 }
 ?>

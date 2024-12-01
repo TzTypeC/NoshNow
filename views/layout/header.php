@@ -1,15 +1,9 @@
 <?php 
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
     $url = $_SERVER['REQUEST_URI'];
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     <header>
         <!-- Navbar -->
         <nav class="bg-white border-slate-200 border-b w-full h-16 flex justify-between fixed items-center px-6 z-10">
@@ -52,7 +46,10 @@
             <div class="flex items-center gap-3">
                 <button class='bg-primary-100 text-primary-600 px-2 py-2 rounded-full bx bx-basket text-2xl'></button>
                 <?php if(isset($_SESSION['logged'])) : ?>
-                    <span>Welcome, <button class="underline font-medium" ><?= $_SESSION["username"]?></button></span>
+                    <?php if($_SESSION['role'] == 'admin') : ?>
+                        <button class="ry-100 px-4 py-2 rounded-full font-medium text-primary-600" onclick="window.location.href='../keys'">Key</button>
+                    <?php endif; ?>
+                    <span>Welcome, <button class="underline font-medium" onclick="window.location.href='../profile'"><?= $_SESSION["username"]?></button></span>
                     <button class="bg-primary-100 px-4 py-2 rounded-full font-medium text-primary-600" onclick="window.location.href='../../controllers/logout.php'">Logout</button>
                 <?php else : ?>
                     <button class="bg-primary-100 px-4 py-2 rounded-full font-medium text-primary-600" ondblclick="window.location.href='../auth/sellerRegist.php'" onclick="window.location.href='../auth/signin.php'">Sign In</button>
@@ -61,5 +58,3 @@
         </nav>
         <!-- Navbar END -->
     </header>
-</body>
-</html>

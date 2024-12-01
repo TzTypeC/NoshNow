@@ -25,9 +25,12 @@ session_start();
         <!-- Side Bar -->
         <?php include '../layout/sellerSideBar.php';?>
 
+
+
         <!-- Content -->
         <div class="ml-16 bg-gray-100 h-screen fixed w-full transition-all duration-200 ease-in-out p-5">
-            <h1>Hello <?= $_SESSION['username'] ?></h1>
+            <!-- Maintenance -->
+            <?php include '../layout/maintenance.php';?>
         </div>
 
         <script type="module" src="../../../assets/js/sellerBar.js"></script>

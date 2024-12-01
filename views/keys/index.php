@@ -35,10 +35,17 @@ $active_key = mysqli_fetch_assoc($active_key_result);
 <html>
 <head>
     <title>Manage Key</title>
+    <style>
+        a{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <h1>Current Active Key</h1>
     <p>Key: <strong><?= $active_key['key_value'] ?></strong></p>
     <p>Expires At: <strong><?= $active_key['expires_at'] ?></strong></p>
+    <a href="../landing/">Back to Landing Page</a>
+    <a href="../seller/">Seller Page</a>
 </body>
 </html>

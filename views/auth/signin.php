@@ -21,7 +21,7 @@ if(isset($_POST["submit"])){
     if($login == 'customer'){
         header('Location: ../landing/');
     }else if($login == 'seller'){
-        header("Location: ../seller/index.php?seller=" . $_SESSION['username']);
+        header("Location: ../seller/dashboard");
     }else if($login == 'error'){
         $errorMessage['status'] = true;
         $errorMessage['title'] = 'Email / Username Wrong';
