@@ -16,6 +16,6 @@ session_start();
     <link rel="stylesheet" href="../../../assets/css/tailwind.css">
 </head>
 <body>
-    Hello <?= $_SESSION['username'] ?>
+    <h1>Hello <?= $_SESSION['username'] ?></h1>
 </body>
 </html>
