@@ -50,7 +50,6 @@
                         <button class="ry-100 px-4 py-2 rounded-full font-medium text-primary-600" onclick="window.location.href='../keys'">Key</button>
                     <?php endif; ?>
                     <span>Welcome, <button class="underline font-medium" onclick="window.location.href='../profile'"><?= $_SESSION["username"]?></button></span>
-                    <button class="bg-primary-100 px-4 py-2 rounded-full font-medium text-primary-600" onclick="window.location.href='../../controllers/logout.php'">Logout</button>
                 <?php else : ?>
                     <button class="bg-primary-100 px-4 py-2 rounded-full font-medium text-primary-600" ondblclick="window.location.href='../auth/sellerRegist.php'" onclick="window.location.href='../auth/signin.php'">Sign In</button>
                 <?php endif; ?>

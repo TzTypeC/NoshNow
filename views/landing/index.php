@@ -297,11 +297,6 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
     </div>
 
 
-
-
-
-
-
     <!-- si React ngapain bjir -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
