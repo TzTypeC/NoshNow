@@ -1,6 +1,6 @@
-console.log('nigga');
+// console.log('nigga');
 
-var islock = true;
+var islock = false;
 const home = document.getElementById('home');
 const profile = document.getElementById('profile');
 const addProduct = document.getElementById('addProduct');
@@ -49,6 +49,7 @@ function expandSidebar() {
 }
 
 function expandSidebarHover() {
+    // console.log('nigga');
     if(islock!=true){
         home.innerHTML = "Home";
         profile.innerHTML = "Profile";
