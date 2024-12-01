@@ -2,6 +2,12 @@
 session_start();
 require '../../config/connect.php';
 
+if(!isset($_SESSION['logged'])){
+    header("Location: ../unauthorized");
+} else if(isset($_SESSION["logged"]) && $_SESSION["role"] != 'admin'){
+    header('Location: ../unauthorized');
+}
+
 // Cek apakah ada key yang masih berlaku
 $query = "SELECT * FROM GeneratedKeys WHERE expires_at > NOW()";
 $result = mysqli_query($conn, $query);
