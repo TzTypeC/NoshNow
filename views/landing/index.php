@@ -1,16 +1,4 @@
-<?php 
-session_start();
 
-// var_dump($_SESSION["role"]);
-
-require '../../config/checkcookie.php';
-check_cookie();
-
-if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
-      header("Location: ../seller/Dashboard/");
-}
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -73,225 +61,209 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
    
       <span class="text-center text-2xl font-medium mt-24">Jelajahi menu <span class="underline font-semibold">SMA Negeri 3 Jombang</span></span>
       <div class="w-[75vw] h-max grid grid-cols-4 gap-6 mx-auto *:text-center *:py-5 *:px-6 *:rounded-2xl *:h-[30rem] hover:*:shadow-xl *:transition-shadow *:duration-200">
-            <!-- Grid Content Wrapper -->
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
             <div class="flex flex-col h-full gap-3">
               <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="./assets/images.jpg" alt="" class="object-cover w-full">
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
               </div>
-              
-              
-              <!-- Details Wrapper -->
+
+              <!-- Details  -->
               <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
                 <div class="w-full h-full flex flex-col justify-between text-left">
-                  <!-- Product Name & Price -->
-                  <div class="flex flex-col gap-2 items-start">
+                  <div class="flex flex-col gap-3 items-start">
                     <div class="">
-                      <h2 class="font-bold text-lg">N-Methyl-2-propanimine</h2>
-                      <h2>by <span class="underline italic">Kantin -1</span></h2>
+                      <h2 class="font-bold text-lg">Produk</h2>
+                      <h2 class="text-sm -mt-1">by <a href="../kantin" class="underline">Author</a></h2>
                     </div>
-                    <h3 class="text-base line-clamp-4 ">Kristal biru murni yang sedap dikonsumsi baik itu disedut maupun dibakar dan dihirup</h3>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
                   </div>
-                  
-                  
-                  
                 </div>
+                <!-- Price -->
                 <div class="flex flex-row justify-between items-center">
                   <h3 class="">12.000</h3>
                   <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
                 </div>
               </div>
-              
-
+              <!-- Details END -->
             </div>
-            <div class="flex flex-col h-full gap-3">
-              <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="./assets/images.jpg" alt="" class="object-cover w-full">
-              </div>
-              
-              
-              <!-- Details Wrapper -->
-              <div class="flex flex-col h-full ">
-                <div class="w-full h-full flex flex-col justify-between text-left">
-                  <!-- Product Name & Price -->
-                  <div class="flex flex-col gap-2 items-start">
-                    <div class="">
-                      <h2 class="font-bold text-lg">N-Methyl-2-propanimine</h2>
-                      <h2>by <span class="underline italic">Kantin -1</span></h2>
-                    </div>
-                    <h3 class="text-base line-clamp-4 ">Kristal biru murni yang sedap dikonsumsi baik itu disedut maupun dibakar dan dihirup</h3>
-                  </div>
-                  
-                  
-                  
-                </div>
-                <div class="flex flex-row justify-between items-center">
-                  <h3 class="">12.000</h3>
-                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
-                </div>
-              </div>
-              
-
-            </div>
-            <div class="flex flex-col h-full gap-3">
-              <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="./assets/images.jpg" alt="" class="object-cover w-full">
-              </div>
-              
-              
-              <!-- Details Wrapper -->
-              <div class="flex flex-col h-full ">
-                <div class="w-full h-full flex flex-col justify-between text-left">
-                  <!-- Product Name & Price -->
-                  <div class="flex flex-col gap-2 items-start">
-                    <div class="">
-                      <h2 class="font-bold text-lg">N-Methyl-2-propanimine</h2>
-                      <h2>by <span class="underline italic">Kantin -1</span></h2>
-                    </div>
-                    <h3 class="text-base line-clamp-4 ">Kristal biru murni yang sedap dikonsumsi baik itu disedut maupun dibakar dan dihirup</h3>
-                  </div>
-                  
-                  
-                  
-                </div>
-                <div class="flex flex-row justify-between items-center">
-                  <h3 class="">12.000</h3>
-                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
-                </div>
-              </div>
-              
-
-            </div>
-            <div class="flex flex-col h-full gap-3">
-              <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="./assets/images.jpg" alt="" class="object-cover w-full">
-              </div>
-              
-              
-              <!-- Details Wrapper -->
-              <div class="flex flex-col h-full ">
-                <div class="w-full h-full flex flex-col justify-between text-left">
-                  <!-- Product Name & Price -->
-                  <div class="flex flex-col gap-2 items-start">
-                    <div class="">
-                      <h2 class="font-bold text-lg">N-Methyl-2-propanimine</h2>
-                      <h2>by <span class="underline italic">Kantin -1</span></h2>
-                    </div>
-                    <h3 class="text-base line-clamp-4 ">Kristal biru murni yang sedap dikonsumsi baik itu disedut maupun dibakar dan dihirup</h3>
-                  </div>
-                  
-                  
-                  
-                </div>
-                <div class="flex flex-row justify-between items-center">
-                  <h3 class="">12.000</h3>
-                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
-                </div>
-              </div>
-              
-
-            </div>
-            <div class="flex flex-col h-full gap-3">
-              <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="./assets/images.jpg" alt="" class="object-cover w-full">
-              </div>
-              
-              
-              <!-- Details Wrapper -->
-              <div class="flex flex-col h-full ">
-                <div class="w-full h-full flex flex-col justify-between text-left">
-                  <!-- Product Name & Price -->
-                  <div class="flex flex-col gap-2 items-start">
-                    <div class="">
-                      <h2 class="font-bold text-lg">N-Methyl-2-propanimine</h2>
-                      <h2>by <span class="underline italic">Kantin -1</span></h2>
-                    </div>
-                    <h3 class="text-base line-clamp-4 ">Kristal biru murni yang sedap dikonsumsi baik itu disedut maupun dibakar dan dihirup</h3>
-                  </div>
-                  
-                  
-                  
-                </div>
-                <div class="flex flex-row justify-between items-center">
-                  <h3 class="">12.000</h3>
-                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
-                </div>
-              </div>
-              
-
-            </div>
-            <div class="flex flex-col h-full gap-3">
-              <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="./assets/images.jpg" alt="" class="object-cover w-full">
-              </div>
-              
-              
-              <!-- Details Wrapper -->
-              <div class="flex flex-col h-full ">
-                <div class="w-full h-full flex flex-col justify-between text-left">
-                  <!-- Product Name & Price -->
-                  <div class="flex flex-col gap-2 items-start">
-                    <div class="">
-                      <h2 class="font-bold text-lg">N-Methyl-2-propanimine</h2>
-                      <h2>by <span class="underline italic">Kantin -1</span></h2>
-                    </div>
-                    <h3 class="text-base line-clamp-4 ">Kristal biru murni yang sedap dikonsumsi baik itu disedut maupun dibakar dan dihirup</h3>
-                  </div>
-                  
-                  
-                  
-                </div>
-                <div class="flex flex-row justify-between items-center">
-                  <h3 class="">12.000</h3>
-                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
-                </div>
-              </div>
-              
-
-            </div>
-            <div class="flex flex-col h-full gap-3">
-              <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="./assets/images.jpg" alt="" class="object-cover w-full">
-              </div>
-              
-              
-              <!-- Details Wrapper -->
-              <div class="flex flex-col h-full ">
-                <div class="w-full h-full flex flex-col justify-between text-left">
-                  <!-- Product Name & Price -->
-                  <div class="flex flex-col gap-2 items-start">
-                    <div class="">
-                      <h2 class="font-bold text-lg">N-Methyl-2-propanimine</h2>
-                      <h2>by <span class="underline italic">Kantin -1</span></h2>
-                    </div>
-                    <h3 class="text-base line-clamp-4 ">Kristal biru murni yang sedap dikonsumsi baik itu disedut maupun dibakar dan dihirup</h3>
-                  </div>
-                  
-                  
-                  
-                </div>
-                <div class="flex flex-row justify-between items-center">
-                  <h3 class="">12.000</h3>
-                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
-                </div>
-              </div>
-              
-
-            </div>
+            <!-- Product Card END-->
             
-            <button>ASJOFJSAFAS</button>
-            <button>ASJOFJSAFAS</button>
-            <button>ASJOFJSAFAS</button>
-            <button>ASJOFJSAFAS</button>
-            <button>ASJOFJSAFAS</button>
-            <button>ASJOFJSAFAS</button>
-            <button>ASJOFJSAFAS</button>
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-3 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                      <h2 class="text-sm -mt-1">by <a href="../kantin" class="underline">Author</a></h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+            
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-3 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                      <h2 class="text-sm -mt-1">by <a href="../kantin" class="underline">Author</a></h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+            
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-3 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                      <h2 class="text-sm -mt-1">by <a href="../kantin" class="underline">Author</a></h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+            
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-3 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                      <h2 class="text-sm -mt-1">by <a href="../kantin" class="underline">Author</a></h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+            
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-3 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                      <h2 class="text-sm -mt-1">by <a href="../kantin" class="underline">Author</a></h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+            
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-3 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                      <h2 class="text-sm -mt-1">by <a href="../kantin" class="underline">Author</a></h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+            
             
       </div>
     

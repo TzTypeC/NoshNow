@@ -29,8 +29,8 @@
             <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
             <div class="flex flex-col h-full gap-3">
               <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="../../assets/img/kromosom.jpg" alt="" class="object-cover h-full w-full"> 
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
               </div>
 
               <!-- Details  -->
@@ -39,7 +39,7 @@
                 <div class="w-full h-full flex flex-col justify-between text-left">
                   <div class="flex flex-col gap-2 items-start">
                     <div class="">
-                      <h2 class="font-bold text-lg">Kromosom</h2>
+                      <h2 class="font-bold text-lg">Produk</h2>
                     </div>
                     <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
                   </div>
@@ -57,8 +57,8 @@
             <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
             <div class="flex flex-col h-full gap-3">
               <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="../../assets/img/kromosom.jpg" alt="" class="object-cover h-full w-full"> 
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
               </div>
 
               <!-- Details  -->
@@ -67,7 +67,7 @@
                 <div class="w-full h-full flex flex-col justify-between text-left">
                   <div class="flex flex-col gap-2 items-start">
                     <div class="">
-                      <h2 class="font-bold text-lg">Kromosom</h2>
+                      <h2 class="font-bold text-lg">Produk</h2>
                     </div>
                     <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
                   </div>
@@ -85,8 +85,8 @@
             <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
             <div class="flex flex-col h-full gap-3">
               <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="../../assets/img/kromosom.jpg" alt="" class="object-cover h-full w-full"> 
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
               </div>
 
               <!-- Details  -->
@@ -95,7 +95,7 @@
                 <div class="w-full h-full flex flex-col justify-between text-left">
                   <div class="flex flex-col gap-2 items-start">
                     <div class="">
-                      <h2 class="font-bold text-lg">Kromosom</h2>
+                      <h2 class="font-bold text-lg">Produk</h2>
                     </div>
                     <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
                   </div>
@@ -113,8 +113,8 @@
             <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
             <div class="flex flex-col h-full gap-3">
               <!-- Product Image -->
-              <div class=" w-full h-full  *:rounded-xl">
-                <img src="../../assets/img/kromosom.jpg" alt="" class="object-cover h-full w-full"> 
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
               </div>
 
               <!-- Details  -->
@@ -123,7 +123,7 @@
                 <div class="w-full h-full flex flex-col justify-between text-left">
                   <div class="flex flex-col gap-2 items-start">
                     <div class="">
-                      <h2 class="font-bold text-lg">Kromosom</h2>
+                      <h2 class="font-bold text-lg">Produk</h2>
                     </div>
                     <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
                   </div>
@@ -137,7 +137,65 @@
               <!-- Details END -->
             </div>
             <!-- Product Card END-->
+
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-2 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+
+            <!-- Product Card *UNTUK TEMPLATE PRODUK, COPAS-ABLE-->
+            <div class="flex flex-col h-full gap-3">
+              <!-- Product Image -->
+              <div class=" w-full h-1/2 *:rounded-xl">
+                <img src="../../assets/img/product.png" alt="" class="object-cover w-full h-full"> 
+              </div>
+
+              <!-- Details  -->
+              <div class="flex flex-col h-full ">
+                <!-- Title & Description-->
+                <div class="w-full h-full flex flex-col justify-between text-left">
+                  <div class="flex flex-col gap-2 items-start">
+                    <div class="">
+                      <h2 class="font-bold text-lg">Produk</h2>
+                    </div>
+                    <h3 class="text-base line-clamp-4 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis, doloribus nostrum neque dolores quaerat aut eligendi earum error nesciunt dignissimos incidunt quidem obcaecati adipisci molestias necessitatibus. Eum, earum consequuntur.</h3>
+                  </div>
+                </div>
+                <!-- Price -->
+                <div class="flex flex-row justify-between items-center">
+                  <h3 class="">12.000</h3>
+                  <button class="border-2 border-primary-600 bg-white text-primary-600 hover:bg-primary-600 hover:text-white px-4 py-2 rounded-full w-32 h-max font-medium transition-colors duration-100">Pesan</button>
+                </div>
+              </div>
+              <!-- Details END -->
+            </div>
+            <!-- Product Card END-->
+
             
+
       </div>
 
         </div>
