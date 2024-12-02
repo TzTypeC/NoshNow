@@ -31,10 +31,12 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
     <div class="bg-white w-full h-16"></div>
 
     <!-- Main Banner Wrapper -->
-    <div class="*:text-white bg-primary-400 w-[99%] h-[50vh] mx-auto flex flex-col rounded-3xl justify-center gap-3">
-      <i class='text-9xl text-center bx bxs-bowl-rice drop-shadow-XL'></i>
-      <h1 class="font-semibold text-5xl text-center mx-auto">Have a Nosh, Right Now</h1>
-      <h3 class="text-lg text-center mx-auto whitespace-pre-line mb-14">Purchase your favorite meals from your favorite places
+    <div class="*:text-white bg-primary-400 w-[99%] h-[50vh] mx-auto flex flex-col rounded-3xl justify-center gap-3 relative -z-10">
+      <img src="../../assets/img/default-md.svg" alt="" class="w-[99%] h-[50vh] object-cover absolute z-0">
+      
+      <i class='text-9xl text-center bx bxs-bowl-rice drop-shadow-XL z-10'></i>
+      <h1 class="font-semibold text-5xl text-center mx-auto z-10">Have a Nosh, Right Now</h1>
+      <h3 class="text-lg text-center mx-auto whitespace-pre-line mb-14 z-10">Purchase your favorite meals from your favorite places
         here, on our web. As smooth as in the app. Same fast
         delivery. Countless restos to try.
       </h3>

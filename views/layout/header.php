@@ -6,7 +6,7 @@
 ?>
     <header>
         <!-- Navbar -->
-        <nav class="bg-white border-slate-200 border-b w-full h-16 flex justify-between fixed items-center px-6 z-10">
+        <nav class="bg-white border-slate-200 border-b w-full h-16 flex justify-between fixed items-center px-6 z-50">
             <!-- Left Buttons Wrapper -->
             <div class="flex items-center gap-10">
                 <!-- NoshNow Title-->
