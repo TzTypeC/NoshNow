@@ -1,4 +1,16 @@
+<?php 
+session_start();
 
+// var_dump($_SESSION["role"]);
+
+require '../../config/checkcookie.php';
+check_cookie();
+
+if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
+      header("Location: ../seller/Dashboard/");
+}
+
+?>
 
 <!doctype html>
 <html lang="en">
