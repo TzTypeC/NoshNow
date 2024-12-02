@@ -28,7 +28,7 @@ session_start();
 
 
         <!-- Content -->
-        <div class="ml-16 bg-gray-100 h-screen fixed w-full transition-all duration-200 ease-in-out p-5">
+        <div class="ml-16 bg-gray-100 h-screen transition-all duration-200 ease-in-out pt-24">
             <!-- Maintenance -->
             <?php include '../layout/maintenance.php';?>
         </div>

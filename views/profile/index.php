@@ -4,7 +4,13 @@ session_start();
 // var_dump($_SESSION["role"]);
 
 require '../../config/checkcookie.php';
+require '../../controllers/getdata.php';
 check_cookie();
+
+$userInfo = getUsers();
+$userInfo = $userInfo[0];
+
+// var_dump($userInfo);
 
 if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
       header("Location: ../seller/Dashboard/");
@@ -37,7 +43,7 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
                 <h1 class="text-6xl font-medium text-primary-500"><?= $_SESSION['username']?></h1>
                 <h2 class="font-semibold text-xl text-gray-400">Join date:
                   <span class="font-normal">
-                    DD/MM/YYYY
+                    <?= $userInfo['created_at']?>
                   </span>
                 </h2>
               </div>
@@ -53,7 +59,7 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
                     Full name
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-4">
-                    John Doe
+                  <?= ($userInfo['first_name'] != NULL &&  $userInfo['last_name'] != NULL) ? $userInfo['first_name'] .  $userInfo['last_name'] : 'Belum Diatur' ?>
                 </dd>
             </div>
             <div class="py-3 sm:py-5 sm:grid sm:grid-cols-5 sm:gap-3 sm:px-6 items-center">
@@ -61,7 +67,7 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
                     Email
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-4">
-                    user@mail.com
+                <?= $userInfo['email']?>
                 </dd>
             </div>
             <div class="py-3 sm:py-5 sm:grid sm:grid-cols-5 sm:gap-3 sm:px-6 items-center">
@@ -69,7 +75,7 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
                     Phone
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-4">
-                    08123456789
+                <?= $userInfo['phone_number'] != NULL ? $userInfo['phone_number'] : 'Belum Diatur';?>
                 </dd>
             </div>
             

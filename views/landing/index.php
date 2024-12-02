@@ -61,7 +61,7 @@ if(isset($_SESSION['logged']) && $_SESSION['role']=='seller'){
 
     <!-- Contents -->
     <div class="flex flex-col gap-8 mt-24">  
-      <span class="text-center text-2xl font-medium">Kamu mw bli apa bub</span>
+      <span class="text-center text-2xl font-medium">Kamu mau beli apa?</span>
       <div class="flex justify-center gap-6 font-medium text-lg items-center *:border *:border-gray-200 *:size-48 *:rounded-2xl hover:*:shadow-xl *:transition-shadow *:duration-200">
         <button>Makanan</button>
         <button>Minuman</button>

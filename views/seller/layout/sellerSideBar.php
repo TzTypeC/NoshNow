@@ -16,7 +16,7 @@
     // echo $finalPath; // Output: seller/dashboard atau seller/dashboard/index.php
 ?>
 
-<div id="sidebar" data-expanded="false" class="w-28 bg-white h-screen rounded-none fixed border-none transition-all duration-200 ease-in-out overflow-hidden">
+<div id="sidebar" data-expanded="false" class="w-16 mt-16 bg-white h-screen rounded-none fixed border-none transition-all duration-200 ease-in-out overflow-hidden">
     <!-- Items -->
     <div class="p-2 space-y-4">
         <!-- Home -->

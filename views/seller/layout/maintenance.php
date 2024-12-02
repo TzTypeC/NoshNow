@@ -1,4 +1,4 @@
-<div class="min-h-screen flex flex-col justify-center items-center">
+<div class="flex flex-col justify-center items-center mt-16">
       <img
         src="../../../assets/svg/construction.svg"
         alt="Logo"
@@ -10,7 +10,7 @@
         Ada Pekerjaan
       </h1>
       <p class="text-center text-gray-500 text-lg md:text-xl lg:text-2xl mb-8">
-        Laman ini dalam proses pembangunan. Coba kembali nanti! 
+        Laman ini dalam proses pengembangan. Coba kembali nanti! 
       </p>
       <div class="flex space-x-3">
         <button

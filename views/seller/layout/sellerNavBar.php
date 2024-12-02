@@ -5,7 +5,7 @@
     $url = $_SERVER['REQUEST_URI'];
 ?>
 
-<nav class="bg-white border-b border-gray-300">
+<nav class="bg-white border-b border-gray-300 w-screen h-16 fixed">
     <div class="flex justify-between items-center px-6">
         <!-- Ícono de Menú (primary) -->
         <button id="menu-button">
@@ -23,6 +23,9 @@
             </button> -->
             <!-- Profile Button -->
             <button>
+                <?php if($_SESSION['role']=='admin') :?>
+                    <button class="ry-100 px-4 py-2 rounded-full font-medium text-primary-600" onclick="window.location.href='../../landing'">Back To Landing</button>
+                <?php endif; ?>
                 <i class="fas fa-user text-primary-500 text-lg" id="profileNav" onclick="window.location.href='../Profile'"></i>
             </button>
         </div>
